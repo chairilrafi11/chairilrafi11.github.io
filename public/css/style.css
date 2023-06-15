@@ -205,11 +205,10 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  padding-top: 200px;
-  padding-bottom: 1000px;
   display: table;
   width: 100%;
-  background: url(../images/banner.png) center center no-repeat;
+  padding: 60;
+  background: url(../images/bg_header.png) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -486,7 +485,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #5ca9fb 0%, #458FFA 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -608,6 +607,21 @@ label {
 #contact .social i.fa:hover {
   color: #608dfd;
   background: #fff;
+}
+.contactt {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: table;
+  width: 100%;
+  background: url(../images/bg_contact.png) center center no-repeat;
+  background-color: #e5e5e5;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; */
+}
+.contactt .overlay {
+  background: rgba(0, 0, 0, 0);
 }
 /* Footer Section*/
 #footer {

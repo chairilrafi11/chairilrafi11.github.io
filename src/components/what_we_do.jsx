@@ -2,17 +2,20 @@ import React from "react";
 
 export const WhatWeDo = (props) => {
   return (
-    <div id="what_we_do" style={{marginTop: '-600px'}}>
+    // <div id="what_we_do" style={{marginTop: '-400px'}}>
+    <div id="what_we_do">
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-md-6">
             <div className="col-xs-12 col-md-6">
-              <img src="images/artwork_bisdev.png" className="img-responsive" alt="" />{" "}
-              <img src="images/artwork_hosting.png" className="img-responsive" alt="" />{" "}
+              <img src="images/card_2.png" className="img-responsive" alt="" />{" "}
+              <br></br>
+              <img src="images/card_3.png" className="img-responsive" alt="" />{" "}
             </div>
-            <div className="col-xs-12 col-md-6 m-10" style={{textAlign: 'center',marginTop: 200}}>
-              <img src="images/artwork_security.png" className="img-responsive" alt="" />{" "}
-              <img src="images/artwork_sosmed.png" className="img-responsive" alt="" />{" "}
+            <div className="col-xs-12 col-md-6 m-10" style={{textAlign: 'center',marginTop: 100}}>
+              <img src="images/card_1.png" className="img-responsive" alt="" />{" "}
+              <br></br>
+              <img src="images/card-4.png" className="img-responsive" alt="" />{" "}
             </div>
           </div>
           <div className="col-xs-12 col-md-6">
