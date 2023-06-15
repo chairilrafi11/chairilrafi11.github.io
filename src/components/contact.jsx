@@ -35,13 +35,12 @@ export const Contact = (props) => {
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
-            <div className="row">
+          <div>
+            <div>
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>LET'S COLLABORATE</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Ready to Explore Your Potential Digital Ecosystem?, Connect with Us Today.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -53,7 +52,7 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Name*"
                         required
                         onChange={handleChange}
                       />
@@ -67,7 +66,37 @@ export const Contact = (props) => {
                         id="email"
                         name="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder="Email*"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="form-control"
+                        placeholder="Phone Number*"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="form-control"
+                        placeholder="Your Company*"
                         required
                         onChange={handleChange}
                       />
@@ -81,7 +110,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Fill Message*"
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -94,66 +123,53 @@ export const Contact = (props) => {
               </form>
             </div>
           </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
-            </div>
-          </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 Lazcore Inovasi Digital
-            <a href="http://www.google.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
+        <div className="row">
+          <div className="col-md-4 text-center">
+            <p>
+              &copy; @2023 Lazcore ID All Righrs reserved.
+            </p>
+          </div>
+          <div className="col-md-4">
+            <div className="col-md-3">
+              <a href="#what_we_do" className="page-scroll">
+                What We Do
+              </a>
+            </div>
+            <div className="col-md-3">
+              <a href="#about" className="page-scroll">
+                About
+              </a>
+            </div>
+            <div className="col-md-3">
+              <a href="#contact" className="page-scroll">
+                Contact
+              </a>
+            </div>
+            <div className="col-md-3">
+              <a href="#contact" className="page-scroll">
+                Let's Talk
+              </a>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="row">
+              <div className="col-md-6">
+
+              </div>
+              <div className="col-md-1">
+                <img src="icon/ic_instagram.png" className="img-responsive" alt="" />{" "}
+              </div>
+              <div className="col-md-1">
+                <img src="icon/ic_tiktok.png" className="img-responsive" alt="" />{" "}
+              </div>
+              <div className="col-md-1">
+                <img src="icon/ic_youtube.png" className="img-responsive" alt="" />{" "}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
